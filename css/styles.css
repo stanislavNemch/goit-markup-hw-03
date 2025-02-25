@@ -7,13 +7,6 @@ body {
   background-color: #ffffff;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.02em;
-}
-
 h1 {
   font-weight: bold;
   font-size: 56px;
@@ -38,11 +31,9 @@ ul {
 }
 
 .features-text {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #434455;
 }
 
@@ -62,11 +53,9 @@ ul {
 }
 
 .nav-list {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.02em;
 }
 
 .nav-list a {
@@ -80,11 +69,9 @@ a:focus {
 }
 
 .contacts {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.02em;
   font-style: normal;
 }
 
@@ -104,17 +91,14 @@ a:focus {
 }
 
 .hero-title {
-  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 56px;
   line-height: 1.07;
-  letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
 }
 
 .hero-title-button {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -167,11 +151,9 @@ button:focus {
 }
 
 .text-footer {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #f4f4fd;
 }
 
