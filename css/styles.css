@@ -1,3 +1,19 @@
+h1,
+h2,
+h3,
+p {
+  padding: 0px;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -18,16 +34,46 @@ h2 {
   font-size: 36px;
 }
 
+ul,
+nav-list {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.flex-block {
+  display: flex;
+}
+
+.features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
 .features-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-}
-
-ul {
-  list-style-type: none;
 }
 
 .features-text {
@@ -38,12 +84,13 @@ ul {
 }
 
 .logo {
+  display: block;
+  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  text-decoration: none;
   color: #4d5ae5;
   text-transform: uppercase;
 }
@@ -53,13 +100,14 @@ ul {
 }
 
 .nav-list {
+  display: flex;
+  gap: 40px;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
 }
 
 .nav-list a {
-  text-decoration: none;
   color: #2e2f42;
 }
 
@@ -68,15 +116,20 @@ a:focus {
   color: #404bbf;
 }
 
+.header-block {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.nav-header-block {
+  align-items: center;
+}
+
 .contacts {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   font-style: normal;
-}
-
-address a {
-  text-decoration: none;
+  margin-left: auto;
   font-style: normal;
   color: #434455;
 }
@@ -86,8 +139,22 @@ a:focus {
   color: #404bbf;
 }
 
+.nav-li-menu {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.nav-link,
+.contacts-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .hero {
+  padding: 188px 0 188px;
   background-color: #2e2f42;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .hero-title {
@@ -96,9 +163,13 @@ a:focus {
   line-height: 1.07;
   text-align: center;
   color: #ffffff;
+  max-width: 496px;
+  margin: auto;
+  margin-bottom: 48px;
 }
 
 .hero-title-button {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -107,6 +178,11 @@ a:focus {
   color: #ffffff;
   background-color: #4d5ae5;
   cursor: pointer;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  margin: auto;
 }
 
 .hero button:hover,
@@ -121,14 +197,59 @@ button:focus {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .team {
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: #f4f4fd;
 }
 
-.team-container {
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.portfolio-text-block {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.team-list-block .features-title {
+  text-align: center;
+}
+
+.team-list {
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+
+.team-list-block {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.team-container {
+  display: flex;
+  gap: 24px;
+  background-color: #ffffff;
+}
+
+.projects-container {
+  column-gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 48px;
+}
+
+.features-width-li {
+  flex-basis: calc((100% - 3 * 16px) / 3);
+}
+
+.projects-width-li {
+  width: calc((100% - 48px) / 3);
 }
 
 .logo-footer {
@@ -137,17 +258,20 @@ button:focus {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  text-decoration: none;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .span-footer {
   color: #f4f4fd;
+  max-width: 264px;
 }
 
 .block-footer {
   background-color: #2e2f42;
+  padding: 100px 0 100px;
 }
 
 .text-footer {
@@ -155,8 +279,5 @@ button:focus {
   font-size: 16px;
   line-height: 1.5;
   color: #f4f4fd;
-}
-
-.team-list {
-  background-color: #ffffff;
+  max-width: 264px;
 }
